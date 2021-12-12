@@ -25,7 +25,7 @@ public class BusBounds : MonoBehaviour
 		}
         if (transform.position.y < minY) {
 			Vector3 temp = transform.position;
-			temp.y = minY - 2f;
+			temp.y = minY;
 			transform.position = temp;
 		}
 	}
@@ -35,6 +35,6 @@ public class BusBounds : MonoBehaviour
 		
 		minX = -bounds.x;
 		maxX = bounds.x;
-        minY = bounds.y;
+        minY = -bounds.y;
 	}
 }

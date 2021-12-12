@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CameraScript: MonoBehaviour
 {
-	private float speed = 1.0f;
-	private float acceleration = 0.2f;
-	private float maxSpeed = 3.2f;
+	private float speed = 2f;
+	private float acceleration = 0f;
+	private float maxSpeed = 1.9f;
 
 	[HideInInspector]
 	public bool moveCamera;

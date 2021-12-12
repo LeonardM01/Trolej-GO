@@ -5,10 +5,10 @@ using UnityEngine;
 public class BusMovement : MonoBehaviour
 {
 
-	public float speed = 8f, maxVelocity = 4f, maxVelocityY = 1f;
+	public float speed = 8f, maxVelocity = 4f;
 	private Rigidbody2D myBody;
 
-	private bool moveLeft, moveRight, moveUp;
+	private bool moveLeft, moveRight;
 	
 	void Awake() {
 		myBody = GetComponent<Rigidbody2D> ();
@@ -21,9 +21,6 @@ public class BusMovement : MonoBehaviour
 
 		if (moveRight) {
 			MoveRight();
-		}
-		if (moveUp){
-			MoveUp();
 		}
 	}
 
@@ -49,7 +46,7 @@ public class BusMovement : MonoBehaviour
 		transform.localScale = temp;
 
 
-		myBody.AddForce (new Vector2(forceX, 0));
+		myBody.AddForce (new Vector2(forceX, 2.1f));
 
 	}
 
@@ -66,24 +63,7 @@ public class BusMovement : MonoBehaviour
 		transform.localScale = temp;
 
 		
-		myBody.AddForce (new Vector2(forceX, 0));
-
-	}
-
-	void MoveUp(){
-
-		float forceY = 0f;
-		float vel = Mathf.Abs (myBody.velocity.y);
-		
-		if (vel < maxVelocityY)
-			forceY = speed;
-		
-		Vector3 temp = transform.localScale;
-		temp.y = 1f;
-		transform.localScale = temp;
-
-		
-		myBody.AddForce (new Vector2(0, forceY));
+		myBody.AddForce (new Vector2(forceX, 2.1f));
 
 	}
 

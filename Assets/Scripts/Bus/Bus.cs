@@ -4,52 +4,27 @@ using UnityEngine;
 
 public class Bus : MonoBehaviour
 {
-   public float speed = 8f, maxVelocity = 4f;
-	private Rigidbody2D myBody;
-
-	void Awake() {
-		myBody = GetComponent<Rigidbody2D> ();
-	}
-
-	void Start () {
-	
-	}
-
-	void FixedUpdate () {
-		BusKeyboard ();
-	}
-
-	void BusKeyboard() {
-		float forceX = 0f;
-		float vel = Mathf.Abs (myBody.velocity.x);
-
-		float h = Input.GetAxisRaw ("Horizontal");
-
-		if (h > 0) {
-
-			if (vel < maxVelocity)
-				forceX = speed;
-
-			Vector3 temp = transform.localScale;
-			temp.x = 0.4f;
-			transform.localScale = temp;
-
-		} else if (h < 0) {
-		
-			if (vel < maxVelocity)
-				forceX = -speed;
-			
-			Vector3 temp = transform.localScale;
-			temp.x = 0.4f;
-			transform.localScale = temp;
-
-
-		}
-
-
-		myBody.AddForce (new Vector2(forceX, 0));
-
-	}
-
+  public float speed = 5f;
+  public float movementx = 0f;
+  public Rigidbody2D rigidBody;
+  public int points;
+  // Use this for initialization
+  void Start () {
+    rigidBody = GetComponent<Rigidbody2D> ();
+  }
+  
+  // Update is called once per frame
+  void FixedUpdate () {
+    movementx = Input.GetAxis ("Horizontal");
+    if (movementx > 0f) {
+      rigidBody.velocity = new Vector2 (movementx * speed, 2.1f);
+    }
+    else if (movementx < 0f) {
+      rigidBody.velocity = new Vector2 (movementx * speed, 2.1f);
+    } 
+    else {
+      rigidBody.velocity = new Vector2 (0 , 2.1f);
+    }
+ }
 } //Player speed on the X
 

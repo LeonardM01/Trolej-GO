@@ -6,6 +6,7 @@ public class Counter : MonoBehaviour
 {   
     Bus  player;
     public int points;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,9 @@ public class Counter : MonoBehaviour
         if (hit.CompareTag("Player"))
         {
             player.points += points;
-            Destroy(gameObject);
+            if(hit.tag == "People"){
+            hit.gameObject.SetActive(false);
+            }
         }
     }
 }

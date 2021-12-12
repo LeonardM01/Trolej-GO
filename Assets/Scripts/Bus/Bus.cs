@@ -26,5 +26,6 @@ public class Bus : MonoBehaviour
       rigidBody.velocity = new Vector2 (0 , 2.1f);
     }
  }
+ 
 } //Player speed on the X
 

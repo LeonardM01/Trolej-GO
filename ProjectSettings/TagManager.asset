@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Background
+  - People
+  - Spawner
+  - deadly
   layers:
   - Default
   - TransparentFX
@@ -17,9 +20,9 @@ TagManager:
   - 
   - 
   - BG
-  - 
-  - 
-  - 
+  - People
+  - Spawner
+  - deadly spawner
   - 
   - 
   - 

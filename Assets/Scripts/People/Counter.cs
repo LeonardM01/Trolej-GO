@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Counter : MonoBehaviour
 {   
-    Bus  player;
+    Bus player;
     public int points;
     
     // Start is called before the first frame update
@@ -16,7 +16,7 @@ public class Counter : MonoBehaviour
     void OnTriggerEnter2D(Collider2D hit) {
         if (hit.CompareTag("Player"))
         {
-            player.points += points;
+            player.points += 1;
             if(hit.tag == "People"){
             hit.gameObject.SetActive(false);
             }

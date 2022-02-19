@@ -749,8 +749,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 140.01001, y: -48.23999}
-  m_SizeDelta: {x: 280.02, y: 69.05}
+  m_AnchoredPosition: {x: 158.31, y: -49.45996}
+  m_SizeDelta: {x: 243.42, y: 66.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &475214224
 MonoBehaviour:
@@ -1216,7 +1216,7 @@ GameObject:
   - component: {fileID: 1017321943}
   m_Layer: 0
   m_Name: People
-  m_TagString: Untagged
+  m_TagString: People
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2002,6 +2002,10 @@ PrefabInstance:
     - target: {fileID: 654409762, guid: 92e575a6b4455ad4aae57cb3f2a3dc12, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 654409763, guid: 92e575a6b4455ad4aae57cb3f2a3dc12, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 654409764, guid: 92e575a6b4455ad4aae57cb3f2a3dc12, type: 3}
       propertyPath: speed

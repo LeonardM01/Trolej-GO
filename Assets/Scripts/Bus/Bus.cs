@@ -7,8 +7,8 @@ public class Bus : MonoBehaviour
     public Rigidbody2D myBody;
     public int points;
     private float speed = 2f;
-    private float acceleration = 1f;
-    private float maxSpeed = 1.9f;
+    private float acceleration = 0.2f;
+    private float maxSpeed = 2f;
 
     [HideInInspector]
     public bool moveBusWithCamera1;

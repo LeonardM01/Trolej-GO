@@ -5,8 +5,8 @@ using UnityEngine;
 public class CameraScript: MonoBehaviour
 {
 	private float speed = 2f;
-	private float acceleration = 1f;
-	private float maxSpeed = 1.9f;
+	private float acceleration = 0.2f;
+	private float maxSpeed = 2f;
 
 	[HideInInspector]
 	public bool moveCamera;
@@ -18,11 +18,12 @@ public class CameraScript: MonoBehaviour
 
 	void Update () {
 		if (moveCamera) {
-			MoveCamera ();	
+			MoveCamera();	
 		}
+
 	}
 
-	void MoveCamera() {
+	void  MoveCamera() {
 		
 		Vector3 temp = transform.position;
 		
@@ -38,7 +39,6 @@ public class CameraScript: MonoBehaviour
 		
 		if (speed > maxSpeed)
 			speed = maxSpeed;
-		
 	}
 
 }

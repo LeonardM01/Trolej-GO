@@ -451,6 +451,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4858759702127875427, guid: 92e575a6b4455ad4aae57cb3f2a3dc12, type: 3}
   m_PrefabInstance: {fileID: 3023936372813291223}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &164261545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164261544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69783a6d54f9e29dab0fdb50e2ddf61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bus: {fileID: 164261544}
+  posOfBus: 0
+  posOfTouch: 0
 --- !u!50 &164261549 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 654409766, guid: 92e575a6b4455ad4aae57cb3f2a3dc12, type: 3}
@@ -466,18 +481,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 508afd2cb20fdd54784a80fae4f635fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &164261553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164261544}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a69783a6d54f9e29dab0fdb50e2ddf61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &237293361
@@ -1650,7 +1653,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4656be3c9d036fd4399efa5402a0e7e1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.19
+  m_Volume: 0.04
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2041,11 +2044,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5735821939356901926, guid: 92e575a6b4455ad4aae57cb3f2a3dc12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.06
+      value: -0.086
       objectReference: {fileID: 0}
     - target: {fileID: 5735821939356901926, guid: 92e575a6b4455ad4aae57cb3f2a3dc12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.94
+      value: 3.623
       objectReference: {fileID: 0}
     - target: {fileID: 5735821939356901926, guid: 92e575a6b4455ad4aae57cb3f2a3dc12, type: 3}
       propertyPath: m_LocalPosition.z
